@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# hotel-chart
 
-## Getting Started
+今考えてるのは箱ひげ図を作るだけ
 
-First, run the development server:
+1. 楽天トラベル API 用の検索パラメタを入力する
+2. API へ通信する
+3. データを元に箱ひげ図を描画する
+4. 検索クエリは一時的に保存する。SessionStorage とか？
+5. 保存したクエリは参照、再入力できる。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## ページ
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Top のみ。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### (共通)レイアウト
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+サイドバー,メインコンテンツ
 
-## Learn More
+サイドバーには入力履歴リスト
 
-To learn more about Next.js, take a look at the following resources:
+メインコンテンツには上から入力フォーム,チャートエリアが入る想定
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## コンポーネント
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 入力フォーム
+- 入力履歴リスト
+- チャートエリア

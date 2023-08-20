@@ -1,0 +1,9 @@
+.sidebar {
+  width: 96px;
+  background-color: moccasin;
+  box-sizing: border-box;
+  border: 1px solid chocolate;
+  border-radius: 5px;
+  height: 100vh;
+  margin-right: 10px;
+}
